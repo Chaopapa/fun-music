@@ -1,0 +1,66 @@
+{
+    "name": "MyMusic",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "android": "react-native run-android",
+        "ios": "react-native run-ios",
+        "reset": "react-native start --reset-cache",
+        "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+        "start": "react-app-rewired start",
+        "build": "react-app-rewired buid",
+        "test": "react-app-rewired test --env=jsdom"
+    },
+    "dependencies": {
+        "@ant-design/react-native": "^3.2.2",
+        "@react-native-community/masked-view": "^0.1.6",
+        "axios": "^0.19.2",
+        "mobx": "^5.15.4",
+        "mobx-react": "^6.1.8",
+        "react": "16.9.0",
+        "react-art": "^16.12.0",
+        "react-dom": "^16.12.0",
+        "react-native": "^0.61.5",
+        "react-native-gesture-handler": "^1.6.0",
+        "react-native-reanimated": "^1.7.0",
+        "react-native-safe-area-context": "^0.7.3",
+        "react-native-screens": "^2.0.0-beta.4",
+        "react-native-vector-icons": "^6.6.0",
+        "react-native-web": "^0.12.1",
+        "react-navigation": "^4.1.1",
+        "react-navigation-stack": "^2.1.1",
+        "react-navigation-tabs": "^2.7.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.6.2",
+        "@babel/plugin-proposal-class-properties": "^7.8.3",
+        "@babel/plugin-proposal-decorators": "^7.8.3",
+        "@babel/runtime": "^7.6.2",
+        "@react-native-community/eslint-config": "^0.0.5",
+        "@types/jest": "^24.0.24",
+        "@types/react-native": "^0.60.25",
+        "@types/react-native-vector-icons": "^6.4.5",
+        "@types/react-test-renderer": "16.9.1",
+        "@typescript-eslint/eslint-plugin": "^2.12.0",
+        "@typescript-eslint/parser": "^2.12.0",
+        "babel-jest": "^24.9.0",
+        "customize-cra": "^0.9.1",
+        "eslint": "^6.5.1",
+        "jest": "^24.9.0",
+        "metro-react-native-babel-preset": "^0.56.0",
+        "react-app-rewired": "^2.1.5",
+        "react-test-renderer": "16.9.0",
+        "typescript": "^3.7.3"
+    },
+    "jest": {
+        "preset": "react-native",
+        "moduleFileExtensions": [
+            "ts",
+            "tsx",
+            "js",
+            "jsx",
+            "json",
+            "node"
+        ]
+    }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function create() {
+            //定义空对象
+            let obj = {};
+            //取出参数列表的第一个参数（构造函数）
+            let Con = [].shift.call(arguments);
+            //手动指正obj的构造函数为Con原型（链接原型）
+            obj.constructor = Con;
+            //调用Con，改变this为obj，传入剩余参数arguments
+            let result = Con.apply(obj, arguments);
+            //考虑到Con函数中有return的原因，需要对result进行判断
+            return result instanceof Object ? result : obj
+        }
+
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        let obj = create(Person, 'cc', 18);
+        console.log(obj);
+    </script>
+</body>
+
+</html>
